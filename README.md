@@ -65,6 +65,11 @@ Every response contains:
 2. A one-line description of what the prompt produces
 3. A short usage note (only when placeholders need filling)
 
+## Contributors
+
+- [@jackuio440](https://github.com/jackuio440)
+- [Claude](https://claude.ai) (Anthropic) — co-developed via Claude Code
+
 ## License
 
 MIT — see [LICENSE](LICENSE)
