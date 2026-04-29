@@ -1,5 +1,7 @@
 # thesis-prompt-master
 
+> v1.4.0
+
 A Claude Code skill that generates optimized, paste-ready prompts for writing or revising academic theses (Master's and PhD dissertations).
 
 ## What it does
@@ -10,15 +12,15 @@ Supports both **Traditional Chinese** (台灣碩博士論文格式) and **Englis
 
 ## Covered chapters
 
-| Chapter | 中文對應 |
-|---------|---------|
-| Introduction | 緒論 |
-| Literature Review | 文獻回顧 |
-| Methodology | 研究方法 |
-| Results | 研究結果 |
-| Discussion | 討論 |
-| Conclusion | 結論與建議 |
-| Abstract | 摘要 |
+| Chapter | 中文對應 | Notes |
+|---------|---------|-------|
+| Introduction | 緒論 | |
+| Literature Review | 文獻回顧 | |
+| Methodology | 研究方法 | General + Medical Imaging / Deep Learning variant |
+| Results | 研究結果 | |
+| Discussion | 討論 | |
+| Conclusion | 結論與建議 | |
+| Abstract | 摘要 | Structured 4-section format |
 
 Also handles: **revise**, **expand**, **translate/adapt**, and **transition sentences** between sections.
 
@@ -29,6 +31,7 @@ Also handles: **revise**, **expand**, **translate/adapt**, and **transition sent
 - Every prompt includes an explicit output contract (chapter, word count, tense, voice, language)
 - Collects format requirements (word count, citation style, heading numbering) and injects them into the prompt automatically
 - Bundles all clarifying questions into a single message — never asks one at a time
+- Domain-adaptive: auto-adjusts subsection depth and conventions to the research field (clinical, ML/imaging, social science, humanities, etc.)
 
 ## Installation
 
@@ -55,6 +58,10 @@ Give me a prompt to write the Methodology chapter for my PhD thesis on urban hea
 
 ```
 幫我修改這段文獻回顧，改善學術語氣
+```
+
+```
+我在做醫學影像深度學習研究，幫我寫 Materials and Methods 的 prompt
 ```
 
 ## Output format
